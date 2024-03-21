@@ -7,14 +7,28 @@
 
 | Author         | Created on | Version | Last updated by  | Last edited on |
 |----------------|------------|---------|------------------|----------------|
-| Palash Kamble  | 20 03 2023 | 8.0     | Palash Kamble    | 09 Feb 2023    |
+| Palash Kamble  | 20 03 2024 | 8.0     | Palash Kamble    | 21 03 2024    |
 
 
-## Purpose of Application
+## Features of Application
 
-> Bitbucket is a cloud-based service that helps developers manage their code, as well as track and control changes to it. It provides a user-friendly Git repository hosting service, allowing teams to collaborate and create projects, test, and deploy code.
+*  **Git and Mercurial Support**: Bitbucket supports both Git and Mercurial version control systems, allowing users to choose their preferred DVCS (Distributed 
+     Version Control System).
 
-> Before the advent of Bitbucket, developers might have used Git alone, which requires more technical knowledge and the use of command-line interfaces. Bitbucket offers a more accessible solution, enabling even novice coders to work with Git.
+*  **Unlimited Private Repositories**: Bitbucket offers unlimited private repositories for teams and individual developers, allowing them to collaborate on 
+     projects without worrying about repository limits.
+
+*  **Access Control**: Bitbucket provides fine-grained access control mechanisms, allowing repository owners to manage permissions for individuals or groups at 
+     the repository, branch, or project level.
+*  **Access Control**: Bitbucket provides fine-grained access control mechanisms, allowing repository owners to manage permissions for individuals or groups at 
+     the repository, branch, or project level.
+*  **Issue Tracking**: While not as robust as Jira, Bitbucket includes basic issue tracking functionality, allowing users to create and manage issues directly 
+     within the repository.
+*  **Branching and Merging:** Bitbucket supports advanced branching and merging capabilities, making it easy for teams to work on multiple features or bug fixes 
+     concurrently and merge changes back into the main codebase when ready.
+
+
+
 
 **Bitbucket solves several problems faced by developers, including:**
 
@@ -25,7 +39,6 @@
  **Version control and tracking:** Bitbucket helps developers track changes to their code and manage revisions, enabling better collaboration and more efficient development.
   
  **Integration with other tools:** Bitbucket can be integrated with popular tools like Jira, Trello, and Bamboo, further streamlining development workflows and enhancing communication among teams.
-
 
 
 ### Pre-requisites
