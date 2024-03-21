@@ -68,7 +68,7 @@ Steps;
 2. Download tar file according to the release.
 3. Extract the tar file "tar -xvf atlassian-bitbucket-8.19.0.tar.gz"
 4. cd atlassian-bitbucket-8.19.0
-5. Change the path where the vcs data want to stored by using  editor to the file "bin/set-bitbucket-home.sh"
+5. Change the path where the vcs  data want to stored by using  editor to the file "bin/set-bitbucket-home.sh"
 6. Start the service of bit bucket "./start-bitbucket.sh" 
 7. Check it is working or not by hitting localhost:7990
 
