@@ -77,7 +77,31 @@ Note- Java version should be 8,11,13
 (https://confluence.atlassian.com/bitbucketserver087/install-bitbucket-server-on-linux-1209861839.html)
 
 **Application state is running**
+
+
 ![Screenshot from 2024-03-22 17-35-14](https://github.com/palash80/Sprint-1/assets/153359214/479f7dd5-b1cc-42ae-a227-8eaa9594ca77)
+
+**Interface of Application**
+
+![image](https://github.com/palash80/Sprint-1/assets/153359214/9eba2f69-2b80-4cd6-a6b8-5faa112d3edd)
+
+
+
+##Contact Information
+
+
+Name           | Email Address
+---------------|----------------------
+Palash Kamble  | palash.kamble@opstree.com
+
+
+##Conclusion
+
+In Conclusion, Bitbucket offers developers a versatile cloud-based platform for code management and collaboration. With support for Git and Mercurial, unlimited private repositories, and robust access controls, teams can efficiently manage projects. Its features like issue tracking and integration with tools like Jira enhance productivity. With straightforward system requirements and deployment, Bitbucket is a valuable tool for any development team.
+
+
+
+
 
 
 
