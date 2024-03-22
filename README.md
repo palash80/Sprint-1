@@ -71,19 +71,14 @@ Note- Java version should be 8,11,13
 
 
 
-**Installation of bit bucket OS (ubuntu)**
-
-
-Steps;
+**Application Deployment**
 
 1. **Link for Download tar file**
 (https://confluence.atlassian.com/bitbucketserver087/install-bitbucket-server-on-linux-1209861839.html)
-2. Download tar file according to the release.
-3. Extract the tar file "tar -xvf atlassian-bitbucket-8.19.0.tar.gz"
-4. cd atlassian-bitbucket-8.19.0
-5. Change the path where the vcs  data want to stored by using  editor to the file "bin/set-bitbucket-home.sh"
-6. Start the service of bit bucket "./start-bitbucket.sh" 
-7. Check it is working or not by hitting localhost:7990
+
+**Application state is running**
+![Screenshot from 2024-03-22 17-35-14](https://github.com/palash80/Sprint-1/assets/153359214/479f7dd5-b1cc-42ae-a227-8eaa9594ca77)
+
 
 
 
