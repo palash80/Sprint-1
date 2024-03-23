@@ -8,11 +8,16 @@
 
 ## Table of Contents
 
-| Section             |
-|---------------------|
-| [Key Features](#key-features)      |
-| [System Requirements](#system-requirements)  |
-
+| Section                                      |
+|----------------------------------------------|
+| [Important Ports](#important-ports)          |
+| [Architecture](#architecture)                |
+| [How to Setup/Install ScyllaDB](#how-to-setupinstall-scylladb) |
+| [Configure ScyllaDB](#configure-scylladb)    |
+| [Scylla Setup](#scylla-setup)                |
+| [Conclusion](#conclusion)                    |
+| [Contact](#contact)                          |
+| [Reference link Doc](#reference-link-doc)     |
 
 
 # Key Features
