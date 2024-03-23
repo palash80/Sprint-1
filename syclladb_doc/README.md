@@ -2,6 +2,19 @@
 # ScyllaDB Installation
 
 
+| Author         | Created on | Version | Last updated by  | Last edited on |
+|----------------|------------|---------|------------------|----------------|
+| Palash Kamble  | 23 03 2024 | 5.0     | Palash Kamble    | 23 03 2024    |
+
+## Table of Contents
+
+| Section             |
+|---------------------|
+| [Key Features](#key-features)      |
+| [System Requirements](#system-requirements)  |
+
+
+
 # Key Features
 
 | Key Feature        | Description                                               |
