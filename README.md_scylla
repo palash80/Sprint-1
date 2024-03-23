@@ -1,0 +1,44 @@
+# ScyllaDB Installation
+
+
+# Key Features
+
+| Key Feature        | Description                                               |
+|--------------------|-----------------------------------------------------------|
+| Highly Scalable    | Scales seamlessly to handle large volumes of data.        |
+| Low Latency        | Provides fast data access with minimal delay.             |
+| High Availability  | Ensures data is always accessible, minimizing downtime.   |
+| Easy to Use        | Simple to deploy and manage, with user-friendly interfaces. |
+| High Performance   | Optimized for speed and efficiency, delivering rapid data processing. |
+
+
+### System Requirements
+
+| System Requirements | Description               |
+|---------------------|---------------------------|
+| Operating System    | Ubuntu                    |
+| RAM                 | 4 GB or higher            |
+| Disk Space          | 10 GB or higher           |
+| Processor           | 2 GHz dual-core processor or higher |
+
+
+
+## Important Ports
+
+| Important Ports | Description                             |
+|-----------------|-----------------------------------------|
+| 7199            | JMX monitoring port                     |
+| 7000            | Inter-node communication                |
+| 7001            | SSL inter-node communication            |
+| 9042            | CQL native transport (client port)      |
+| 9160            | Thrift client API                       |
+| 7199            | JMX monitoring port                     |
+
+
+### Architecture 
+
+
+https://opstree.slack.com/files/U042LGAHUAG/F06QTEUHR46/screenshot_from_2024-03-23_12-48-31.png
+
+
+
