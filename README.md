@@ -1,5 +1,19 @@
 ## Bit bucket Application Template
 
+### Table of Contents
+
+| Section                                   |
+|-------------------------------------------|
+| [INTRODUCTION](#introduction)             |
+| [Features of Application](#features-of-application) |
+| [Pre-requisites](#pre-requisites)         |
+| [System Requirements](#system-requirements) |
+| [Important Ports](#important-ports)       |
+| [Application Deployment](#application-deployment) |
+| [Contact Information](#contact-information) |
+| [Conclusion](#conclusion)                 |
+
+
 ### INTRODUCTION
 
  BitBucket is a cloud-based service that helps developers store and manage their code, as well as track and control the changes to their code. BitBucket provides a cloud-based Git repository hosting service. Its interface is user-friendly enough so even novice coders can take advantage of Git. We generally require a bit more technical knowledge and use of the command line to use Git alone. Additionally, BitBuckets provides a variety of services like it gives teams to collaborate and create projects, test and deploy the code.
@@ -71,7 +85,7 @@ Note- Java version should be 8,11,13
 
 
 
-**Application Deployment**
+## Application Deployment
 
 1. **Link for Download tar file**
 (https://confluence.atlassian.com/bitbucketserver087/install-bitbucket-server-on-linux-1209861839.html)
