@@ -4,23 +4,32 @@
 
 | Author         | Created on | Version | Last updated by  | Last edited on |
 |----------------|------------|---------|------------------|----------------|
-| Palash Kamble  | 23 03 2024 | 5.0     | Palash Kamble    | 23 03 2024    |
+| Palash Kamble  | 23 /03/ 2024 | 1.0     | Palash Kamble    | 23 /03/2024  |
 
-## Table of Contents
+# Table of Contents
+
+
 
 | Section                                      |
 |----------------------------------------------|
-| [Important Ports](#important-ports)          |
-| [Architecture](#architecture)                |
-| [How to Setup/Install ScyllaDB](#how-to-setupinstall-scylladb) |
-| [Configure ScyllaDB](#configure-scylladb)    |
-| [Scylla Setup](#scylla-setup)                |
-| [Conclusion](#conclusion)                    |
-| [Contact](#contact)                          |
-| [Reference link Doc](#reference-link-doc)     |
+|1. [Introduction](#introduction)                |
+|2. [Important Ports](#important-ports)          |
+|3. [Architecture](#architecture)                |
+|4. [How to Setup/Install ScyllaDB](#how-to-setupinstall-scylladb) |
+|5. [Configure ScyllaDB](#configure-scylladb)    |
+|6. [Scylla Setup](#scylla-setup)                |
+|7. [Conclusion](#conclusion)                    |
+|8. [Contact](#contact)                          |
 
 
-# Key Features
+
+# Introduction
+
+ScyllaDB is a highly scalable and performance-oriented distributed NoSQL database. It is based on the Apache Cassandra project and is designed to handle large volumes of data with low latency and high throughput. ScyllaDB is optimized for modern hardware architectures and utilizes a shared-nothing architecture to achieve horizontal scalability. It offers features such as tunable consistency levels, automatic data partitioning, and built-in fault tolerance mechanisms. ScyllaDB is widely used in various industries for applications requiring real-time data processing, high availability, and predictable performance.
+
+
+
+## Key Features
 
 | Key Feature        | Description                                               |
 |--------------------|-----------------------------------------------------------|
@@ -42,7 +51,7 @@
 
 
 
-## Important Ports
+### Important Ports
 
 | Important Ports | Description                             |
 |-----------------|-----------------------------------------|
@@ -59,46 +68,72 @@
 ![Screenshot from 2024-03-23 12-48-31](https://github.com/palash80/Sprint-1/assets/153359214/a9ed2d51-a9d4-4b1e-a35b-cf40bc3a25ea)
 
 
-## How to Setup/Install ScyllaDB
+### How to Setup/Install ScyllaDB
 
 **Step-1**
 
 >Install a repo file and add the ScyllaDB APT repository to your system.
 
-sudo mkdir -p /etc/apt/keyrings
+<tab><tab><pre><code>`sudo mkdir -p /etc/apt/keyrings`</code></pre>
+
 
 ![image](https://github.com/palash80/Sprint-1/assets/153359214/4a8adcba-bf07-405f-9edc-ed145a195a5c)
 
 **Step-2**
 
-sudo gpg --homedir /tmp --no-default-keyring --keyring /etc/apt/keyrings/scylladb.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys d0a112e067426ab2
+>Import gpg key
+
+
+<tab><tab><pre><code>`sudo gpg --homedir /tmp --no-default-keyring --keyring /etc/apt/keyrings/scylladb.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys d0a112e067426ab2
+`</code></pre>
+
 
 ![image](https://github.com/palash80/Sprint-1/assets/153359214/4a8adcba-bf07-405f-9edc-ed145a195a5c)
 
 **Step-3**
 
-sudo wget -O /etc/apt/sources.list.d/scylla.list http://downloads.scylladb.com/deb/debian/scylla-5.4.list
+>Download ScyllaDB APT repository configuration file
+
+<tab><tab><pre><code>`sudo wget -O /etc/apt/sources.list.d/scylla.list http://downloads.scylladb.com/deb/debian/scylla-5.4.list
+`</code></pre>
 
 **Step-4**
 
+
 Install ScyllaDB packages
 
-sudo apt-get update
-sudo apt-get install -y scylla
+>Update the package list
+
+<tab><tab><pre><code>`sudo apt-get update`</code></pre>
+
+<tab><tab><pre><code>`sudo apt-get install -y scylla
+`</code></pre>
+
 
 **Step-5**
 
 (Ubuntu only) Set Java 17
 
-sudo apt-get update
-sudo apt-get install -y openjdk-17-jre-headless
-sudo update-java-alternatives --jre-headless -s java-1.17.0-openjdk-amd64
+>Update the package list
+<tab><tab><pre><code>`sudo apt-get update
+`</code></pre>
+
+
+>Install java
+
+<tab><tab><pre><code>sudo apt-get install -y openjdk-17-jre-headless`</code></pre>
+
+>Set the java version
+<tab><tab><pre><code>sudo update-java-alternatives --jre-headless -s java-1.17.0-openjdk-amd64
+`</code></pre>
+
 
 **Step-6**
 
 ### Configure ScyllaDB
 
-vi /etc/scylla/scylla.yml
+<tab><tab><pre><code>vi /etc/scylla/scylla.yml`</code></pre>
+
 
 ![image](https://github.com/palash80/Sprint-1/assets/153359214/205761c2-1203-4081-bec1-ffcd62e3782b)
 
@@ -109,15 +144,26 @@ vi /etc/scylla/scylla.yml
 
 **NOTE**
 In above screenshot We have to make the changes (Private IP) in three terms
-1. Listen
-2. rpc
+1. Listen_address
+2. rpc_adress
 3. seeds
+
+**seeds** : This is the PRIVATE IP address that Scylla will use to connect to other Scylla nodes in the cluster. 
+  Seed nodes are used during startup to bootstrap the gossip process and join the cluster
+
+**listen_address**: This is the PRIVATE IP address that Scylla will use to connect to other Scylla nodes in the cluster. In this case, it's set to 'localhost,' indicating that it will listen for connections on the local machine.
+
+**rpc_address**: This is the PRIVATE IP address of the interface for client connections, such as Thrift and CQL. Similar to listen_address, it is set to 'localhost' in this configuration.
 
 ## Scylla Setup
 
 **Step-7**
 
-sudo scylla_setup
+>This script tunes system settings and determines optimal configurations.
+
+<tab><tab><pre><code>sudo scylla_setup</code></pre>
+
+
 
 **NOTE**
 > Read the requirenment carefully as per your need and select **YES**/**NO**
@@ -133,25 +179,28 @@ sudo scylla_setup
 
 **Step-8**
 
-Start Service of ScyllaDB
+>Start Service of ScyllaDB
 
-sudo systemctl start scylla-server
+<tab><tab><pre><code>sudo systemctl start scylla-server</code></pre>
+
+sudo systemctl start scyllaserver
 
 ![image](https://github.com/palash80/Sprint-1/assets/153359214/42e6fd00-d6f6-4eed-bbf5-d833f4dab805)
 
 **Step-9**
 
-Check the service is running or not
+>Check the service is running or not
 
 ![image](https://github.com/palash80/Sprint-1/assets/153359214/f393869e-e544-49b6-b93b-63df63ef04f3)
 
-**Step**
+**Step-10**
 
-login to scylla shell and play around the features
+>login to scylla shell and play around the features
 
-Run cqlsh command
 
-cqlsh IP
+>Run cqlsh command
+
+<tab><tab><pre><code>cqlsh IP</code></pre>
 
 ![image](https://github.com/palash80/Sprint-1/assets/153359214/ad8dc974-175b-4b84-b74f-d331aa503d66)
 
